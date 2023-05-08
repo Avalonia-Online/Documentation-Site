@@ -3,3 +3,4 @@ function loadModule (module) {
         .then(response => response.text())
         .then(text => document.getElementById("content").innerHTML = text);
 }
+loadModule("index");
