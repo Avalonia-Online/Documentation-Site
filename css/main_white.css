@@ -7,11 +7,42 @@
 }
 
 :root {
-    --primary_color: rgba(72, 185, 90, 255);
-    --secondary_color: rgba(62, 123, 120, 255);
+    --primary_color: rgb(72, 185, 90);
+    --primary_color_dark: rgb(36, 158, 56);
+    --secondary_color: rgb(62, 123, 120);
+    --light_gray: rgb(242, 242, 242);
 }
 
 /* Tag Selectors */
+nav {
+    width: 100vw;
+    height: 25px; 
+    background-color: var(--primary_color_dark);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 
+                0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav > ul {
+    list-style-type: none;
+    position: relative;
+    width: calc(100% - 10px);
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-right: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+}
 
 /* Class Selectors */
 
@@ -26,6 +57,7 @@
     position: relative;
     height: 100%;
     width: fit-content;
+    cursor: pointer;
 }
 
 #topbar_title_icon {
