@@ -3,10 +3,12 @@
     left: 0;
     margin: 0;
     top: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 :root {
-    
+    --primary_color: rgba(72, 185, 90, 255);
+    --secondary_color: rgba(62, 123, 120, 255);
 }
 
 /* Tag Selectors */
@@ -14,3 +16,28 @@
 /* Class Selectors */
 
 /* ID Selectors */
+#topbar {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--primary_color);
+}
+
+#topbar_title {
+    position: relative;
+    height: 100%;
+    width: fit-content;
+}
+
+#topbar_title_icon {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#topbar_title_text {
+    float: left;
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+}
