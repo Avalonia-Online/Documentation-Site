@@ -4,6 +4,9 @@
     margin: 0;
     top: 0;
     font-family: Helvetica, Arial, sans-serif;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 :root {
@@ -42,6 +45,14 @@ nav > ul > li {
     text-decoration: none;
     line-height: 24px;
     font-size: 14px;
+    transition: 0.2s all;
+    padding-left: 4px;
+    border-radius: 4px;
+    padding-right: 4px;
+}
+
+nav > ul > li:hover {
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Class Selectors */
@@ -72,4 +83,14 @@ nav > ul > li {
     color: white;
     font-size: 24px;
     line-height: 60px;
+}
+
+#content_index {
+    float: left;
+    width: 240px;
+    height: calc(100vh - 85px);
+    background-color: var(--light_gray);
+    position: relative;
+    z-index: -10;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
