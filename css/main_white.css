@@ -85,12 +85,20 @@ nav > ul > li:hover {
     line-height: 60px;
 }
 
+#container {
+    display: flex;
+}
+
 #content_index {
-    float: left;
     width: 240px;
     height: calc(100vh - 85px);
     background-color: var(--light_gray);
     position: relative;
     z-index: -10;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+#content {
+    height: calc(100vh - 85px);
+    flex-grow: 1;
+    overflow-y: scroll;
 }
